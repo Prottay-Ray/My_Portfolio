@@ -21,16 +21,19 @@ body {
 #main {
     position: sticky;
 }
+#project_head, #intro, #toolkit, #contactme {
+    margin-top: 100px;
+}
 #navbar {
     position: fixed;
     top: 0%;
     right: 0%;
     /* margin-top: 26px; */
     align-items: center;
+    background: transparent;
     display: flex;
     justify-content: right;
-    height: 8px;
-    background-image: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
+    height: 30px;
     width: 100%;
     border-radius: 21px;
     border: 1px solid skyblue;
@@ -39,6 +42,7 @@ body {
 }
 #navbar:hover {
     height: 60px;
+    background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
 }
 a {
     text-decoration: none;
