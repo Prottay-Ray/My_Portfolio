@@ -24,6 +24,17 @@ body {
 #project_head, #intro, #toolkit, #contactme {
     margin-top: 100px;
 }
+#menu {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    background-color: transparent;
+}
+#menu:hover {
+    background-color: gold;
+}
 #navbar {
     position: fixed;
     top: 0%;
@@ -39,6 +50,49 @@ body {
     border: 1px solid skyblue;
     transition: all 0.9s, color 0.3s;
     overflow: hidden;
+}
+#navbar1 {
+    align-items: center;
+    background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+    height: 0px;
+    width: 70%;
+    border-radius: 21px;
+    border: 1px solid skyblue;
+    transition: all 0.9s, color 0.3s;
+    overflow: hidden;
+
+}
+#closeb {
+    background-color: red;
+    color: white;
+}
+.navb {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    color: gold;
+    padding-inline: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 50px;
+    background-color: rgba(128, 10, 10, 0.618);
+    transition: all 0.6s, color 0.3s;
+    border-bottom: 2px solid transparent;
+}
+.navb:hover {
+    color: maroon;
+    width: 220px;
+    font-weight: 600;
+    background-color: gold;
+    border-bottom: 2px solid navy;
 }
 #navbar:hover {
     height: 60px;
@@ -289,7 +343,16 @@ a {
     width: 305px;
     height: 160px;
 }
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 10px) {
+    #menu {
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
     .projectsection {
         grid-template-areas: "aa"
                             "bb"
@@ -315,9 +378,23 @@ a {
     .project_thumb, .project_thumb:hover {
         margin-top: 20px;
     }
+    #navbar {
+        background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
+        height: 60px;
+        transition: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    #menu {
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
     .projectsection {
         grid-template-areas: "aa"
                             "bb"
@@ -339,9 +416,23 @@ a {
     .project_thumb, .project_thumb:hover {
         margin-top: 20px;
     }
+    #navbar {
+        background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
+        height: 60px;
+        transition: none;
+    }
 } 
 
 @media only screen and (min-width: 992px) {
+    #menu {
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
     #tools {
         grid-template-areas: "a b c"
                             "d e f"
@@ -366,5 +457,14 @@ a {
     }
     .project_thumb, .project_thumb:hover {
         margin-top: 0px;
+    }
+    #navbar {
+        background: transparent;
+        height: 30px;
+        transition: all 0.9s, color 0.3s;
+    }
+    #navbar:hover {
+        height: 60px;
+        background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
     }
 } 
