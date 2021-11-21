@@ -53,9 +53,10 @@ body {
     border-bottom: 2px solid transparent;
 }
 .nav:hover {
+    color: maroon;
     width: 220px;
     font-weight: 600;
-    background-color: rgba(50, 174, 212, 0.698);
+    background-color: gold;
     border-bottom: 2px solid navy;
 }
 #intro {
@@ -197,7 +198,7 @@ body {
     width: 90px;
     height: 90px;
 }
-#projectsection {
+.projectsection {
     overflow-y: hidden;
     height: 175px;
     margin-top: 50px;
@@ -210,7 +211,7 @@ body {
     border-radius: 20px;
     margin-bottom: 60px;
 }
-#projectsection:hover {
+.projectsection:hover {
     background-color: transparent;
     height: 580px;
 }
@@ -279,7 +280,7 @@ body {
     height: 160px;
 }
 @media only screen and (min-width: 100px) {
-    #projectsection {
+    .projectsection {
         grid-template-areas: "aa"
                             "bb"
                             "cc";
@@ -295,13 +296,19 @@ body {
                             "h"
                             "i";
     }
-    #projectsection {
+    .projectsection {
         height: fit-content;
+    }
+    .projectsection:hover {
+        height: fit-content;
+    }
+    .project_thumb, .project_thumb:hover {
+        margin-top: 20px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    #projectsection {
+    .projectsection {
         grid-template-areas: "aa"
                             "bb"
                             "cc";
@@ -313,21 +320,41 @@ body {
                             "g h"
                             "i i";
     }
-    #projectsection {
+    .projectsection {
         height: fit-content;
+    }
+    .projectsection:hover {
+        height: fit-content;
+    }
+    .project_thumb, .project_thumb:hover {
+        margin-top: 20px;
     }
 } 
 
 @media only screen and (min-width: 992px) {
-    #projectsection {
-        grid-template-areas: "aa bb cc";
-    }
     #tools {
         grid-template-areas: "a b c"
                             "d e f"
                             "g h i";
     }
-    #projectsection {
+    .projectsection {
+        overflow-y: hidden;
         height: 175px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas: "aa bb cc";
+        justify-content: space-evenly;
+        background-color: rgba(50, 174, 212, 0.91);
+        transition: all 0.9s, color 0.3s;
+        margin-inline: 50px;
+        border-radius: 20px;
+        margin-bottom: 60px;
+    }
+    .projectsection:hover {
+        background-color: transparent;
+        height: 580px;
+    }
+    .project_thumb, .project_thumb:hover {
+        margin-top: 0px;
     }
 } 
