@@ -52,13 +52,14 @@ body {
     overflow: hidden;
 }
 #navbar1 {
+    position: fixed;
     align-items: center;
-    background: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
+    background: linear-gradient(to left, transparent, rgb(50, 174, 212));
     display: none;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-top: 70px;
+    margin-left: 15%;
     height: 0px;
     width: 70%;
     border-radius: 21px;
