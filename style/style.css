@@ -44,7 +44,7 @@ body {
     background: transparent;
     display: flex;
     justify-content: right;
-    height: 30px;
+    height: 45px;
     width: 100%;
     border-radius: 21px;
     border: 1px solid skyblue;
@@ -253,7 +253,6 @@ a {
     min-height: fit-content;
     font-weight: 600;
     border-radius: 20px;
-    cursor: pointer;
 }
 .tool:hover {
     background: gold;
@@ -265,6 +264,7 @@ a {
 }
 .projectsection {
     overflow-y: hidden;
+    overflow-wrap: break-word;
     height: 175px;
     margin-top: 50px;
     display: grid;
@@ -298,10 +298,8 @@ a {
     transition: all 0.9s, color 0.3s;
 }
 .project_thumb:hover {
-    /* width: 40%; */
     background-color: gold;
     color: black;
-    
 }
 .proj_content {
     padding: 8px;
@@ -461,7 +459,7 @@ a {
     }
     #navbar {
         background: transparent;
-        height: 30px;
+        height: 45px;
         transition: all 0.9s, color 0.3s;
     }
     #navbar:hover {
