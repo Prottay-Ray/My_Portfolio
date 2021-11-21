@@ -14,7 +14,6 @@ body {
     -ms-overflow-style: none;
     color: gold;
     letter-spacing: 1.5px;
-    /* line-height: 16px; */
 }
 *::-webkit-scrollbar {
     display: none;
@@ -30,11 +29,19 @@ body {
     align-items: center;
     display: flex;
     justify-content: right;
-    height: 60px;
+    height: 8px;
     background-image: linear-gradient(transparent, rgba(50, 174, 212, 0.418));
     width: 100%;
     border-radius: 21px;
     border: 1px solid skyblue;
+    transition: all 0.9s, color 0.3s;
+    overflow: hidden;
+}
+#navbar:hover {
+    height: 60px;
+}
+a {
+    text-decoration: none;
 }
 .nav {
     margin-inline: 8px;
@@ -43,7 +50,6 @@ body {
     align-content: center;
     width: 150px;
     color: gold;
-    text-decoration: none;
     padding-inline: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -213,7 +219,7 @@ body {
 }
 .projectsection:hover {
     background-color: transparent;
-    height: 580px;
+    height: 600px;
 }
 #assure {
     grid-area: aa;
@@ -225,7 +231,7 @@ body {
     grid-area: cc;
 }
 .project_thumb {
-    height: 580px;
+    height: 600px;
     width: 320px;
     padding: 8px;
     border-radius: 8px;
@@ -243,7 +249,7 @@ body {
 }
 .proj_content > p {
     margin-top: 20px;
-    height: 210px;
+    height: 230px;
 }
 .tile {
     width: 100%;
@@ -352,7 +358,7 @@ body {
     }
     .projectsection:hover {
         background-color: transparent;
-        height: 580px;
+        height: 600px;
     }
     .project_thumb, .project_thumb:hover {
         margin-top: 0px;
