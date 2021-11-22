@@ -53,6 +53,7 @@ body {
 }
 #navbar1 {
     position: fixed;
+    z-index: 2;
     align-items: center;
     background: linear-gradient(to left, transparent, rgb(50, 174, 212));
     display: none;
@@ -360,6 +361,7 @@ a {
     padding: 0px;
     width: 0px;
     height: 0px;
+    min-height: fit-content;
     border-radius: 8px;
     position: fixed;
     left: 20%;
@@ -378,6 +380,18 @@ a {
     margin-bottom: 8px;
 }
 @media only screen and (min-width: 10px) {
+    .tiletool {
+        margin: auto;
+        margin-top: 10px;
+        height: 65px;
+        width: 190px;
+    }
+    .tiletool > img {
+        display: none;
+    }
+    #tiles {
+        flex-direction: column;
+    }
     #menu {
         width: 40px;
         height: 40px;
@@ -420,6 +434,19 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+    .tiletool {
+        align-items: center;
+        margin-top: 10px;
+        height: 160px;
+        width: 160px;
+    }
+    .tiletool > img {
+        margin: auto;
+        display: block;
+    }
+    #tiles {
+        flex-direction: row;
+    }
     #menu {
         width: 40px;
         height: 40px;
@@ -458,6 +485,19 @@ a {
 } 
 
 @media only screen and (min-width: 992px) {
+    .tiletool {
+        align-items: center;
+        margin-top: 10px;
+        height: 160px;
+        width: 160px;
+    }
+    .tiletool > img {
+        margin: auto;
+        display: block;
+    }
+    #tiles {
+        flex-direction: row;
+    }
     #menu {
         width: 40px;
         height: 40px;
