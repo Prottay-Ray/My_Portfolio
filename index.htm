@@ -18,7 +18,7 @@
                 <div id="home" class="nav">Home</div>
             </a>
             <a href="#toolkit">
-                <div id="skills" class="nav">Skills</div>
+                <div id="skills" onclick="closeTool()" class="nav">Skills</div>
             </a>
             <a href="#project_head">
                 <div id="projects" class="nav">Projects</div>
@@ -33,7 +33,7 @@
                 <div id="homeb" onclick="closeIt()" class="navb">Home</div>
             </a>
             <a href="#toolkit">
-                <div id="skillsb" onclick="closeIt()" class="navb">Skills</div>
+                <div id="skillsb" onclick="closeTool()" class="navb">Skills</div>
             </a>
             <a href="#project_head">
                 <div id="projectsb" onclick="closeIt()" class="navb">Projects</div>
@@ -42,6 +42,23 @@
                 <div id="contactb" onclick="closeIt()" class="navb">Contact Me</div>
             </a>
             <div id="closeb" onclick="closeIt()" class="navb">Close Menu</div>
+        </div>
+        <div id="proficiency" style="width: 0px;">
+            <h2>My Proficiencies</h2>
+            <div id="tiles">
+                <div id="backend" class="tool">
+                    <img src="images/backend.png" alt="">
+                    <p>Backend</p>
+                </div>
+                <div id="cssi" class="tool">
+                    <img src="images/hierarchy-structure.png" alt="">
+                    <p>Data Structures</p>
+                </div>
+                <div id="jsi" class="tool">
+                    <img src="images/ui.png" alt="">
+                    <p>Frontend</p>
+                </div>
+            </div>
         </div>
         <div id="body_section">
             <div id="intro">
@@ -66,7 +83,7 @@
                     </a>
                 </div>
             </div>
-            <div id="toolkit">
+            <div id="toolkit" onclick="closeTool()" onmouseenter="">
                 <div class="toolhead">
                     <img src="images/skill.png" alt="">
                     <h1>My Skills</h1>
