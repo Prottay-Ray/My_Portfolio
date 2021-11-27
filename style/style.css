@@ -304,12 +304,12 @@ a {
     color: black;
 }
 .proj_content {
-    padding: 8px;
+    padding: 11px;
 }
 .proj_content > p {
     margin-top: 20px;
     height: 240px;
-    padding-inline: 11px;
+    padding-inline: 18px;
 }
 .proj_content > h2 {
     padding-inline: 11px;
@@ -390,7 +390,6 @@ a {
     border: 1px solid skyblue;
     text-align: center;
     align-items: center;
-    background-color: ;
     background: linear-gradient(rgba(50, 174, 212, 0.932), rgba(50, 174, 212, 0.726));
 }
 #content_para {
