@@ -21,8 +21,11 @@ body {
 #main {
     position: sticky;
 }
-#project_head, #intro, #toolkit, #contactme {
-    margin-top: 100px;
+#toolkit {
+    padding-top: 40px;
+}
+#project_head, #contactme {
+    padding-top: 70px;
 }
 #menu {
     width: 40px;
@@ -34,6 +37,16 @@ body {
 }
 #menu:hover {
     background-color: gold;
+}
+.flexIt {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 8px;
+}
+.flexIt > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 #navbar {
     position: fixed;
@@ -67,7 +80,6 @@ body {
     border: 1px solid skyblue;
     transition: all 0.9s, color 0.3s;
     overflow: hidden;
-
 }
 #closeb {
     background-color: red;
@@ -394,6 +406,9 @@ a {
 }
 #content_para {
     margin: 2%;
+}
+#reachOut {
+    margin-bottom: 16px;
 }
 @media only screen and (min-width: 10px) {
     .tiletool {
